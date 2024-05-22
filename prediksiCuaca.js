@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 async function fetchWeather() {
-  const apiUrl =
-    "https://api.openweathermap.org/data/3.0/onecall?lat=-6.2088&lon=106.8456&appid=9cd68f8751237a290f863852c2eeb66c";
+  const apiKey = "";
+  const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=-6.2088&lon=106.8456&appid=${apiKey}`;
 
   try {
     const { data } = await axios.get(apiUrl);
